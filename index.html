@@ -52,21 +52,18 @@
             margin-top: 80px;
             text-align: center;
             z-index: 1;
-            background: transparent;
+            background: transparent; /* Content itself is transparent */
         }
 
         .content h1 {
             font-size: 48px;
             margin: 20px 0;
+            display: inline-block; /* Make background adapt to content width if desired */
         }
-
+        
         .content p {
             font-size: 20px;
-        }
-
-        .content h1 {
-          background-color: black;
-           padding: 10px;
+            display: inline-block; /* Make background adapt to content width if desired */
         }
     </style>
 </head>
