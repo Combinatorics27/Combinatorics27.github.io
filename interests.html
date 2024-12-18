@@ -1,155 +1,165 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ram's website</title>
-        <style>
-           body {
-    margin: 0;
-    /* overflow: hidden; */ /* Remove this line or change it to overflow: auto; */
-    background: #000005;
-    font-family: poppins, sans-serif;
-    color: white;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-canvas {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ram's website</title>
+    <style>
+        body {
+            margin: 0;
+            /* overflow: hidden; */
+            /* Remove this line or change it to overflow: auto; */
+            background: #000005;
+            font-family: poppins, sans-serif;
+            color: white;
+        }
 
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    z-index: 10;
-}
+        canvas {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-    transition: color 0.3s;
-}
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            z-index: 10;
+        }
 
-nav a:hover {
-    color: #39CCCC;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
 
-.content {
-    position: relative;
-    margin-top: 80px;
-    text-align: center;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    display: inline-block;
-    overflow-y: auto;
-    max-height: calc(100vh - 160px);
-}
+        nav a:hover {
+            color: #39CCCC;
+        }
 
-.content h1 {
-    font-size: 48px;
-    margin: 10px 0;
-    color: white;
-}
+        .content {
+            position: relative;
+            margin-top: 80px;
+            text-align: center;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            display: inline-block;
+            overflow-y: auto;
+            max-height: calc(100vh - 160px);
+        }
 
-.content p {
-    font-size: 20px;
-    color: white;
-    margin-bottom: 10px;
-}
-    </head>
-    <body>
-        <canvas id="galaxyCanvas"></canvas>
+        .content h1 {
+            font-size: 48px;
+            margin: 10px 0;
+            color: white;
+        }
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="writings.html">Writings</a>
-            <a href="interests.html">Interests</a>
-            <a href="about.html">About Me</a>
-        </nav>
+        .content p {
+            font-size: 20px;
+            color: white;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
 
-        <div class="content">
-    <h1>Interests</h1>
-    <p>my interests, in no specific order, include</p>
-    <ul style="list-style: none; padding-left: 0;">
-        <li style="margin-bottom: 20px;">math - math was the subject that came to me naturally and effortlessly. I like solving competetive math problems although I'm a bit rusty now</li>
-        <li style="margin-bottom: 20px;">statistics - i was introduced to actual statistics thanks to the actuarial science course.</li>
-        <li style="margin-bottom: 20px;">puzzles - i like solving puzzles, like jane street and cs50x puzzle day. also the project euler problems</li>
-        <li style="margin-bottom: 20px;">music - i'm learning piano. atleast trying to.</li>
-        <li style="margin-bottom: 20px;">reading - i like to read non-fiction books</li>
-        <li style="margin-bottom: 20px;">neuroscience - the brain fascinates me. i have surface level knowledge but it seems fun</li>
-        <li style="margin-bottom: 20px;">game theory - you could say all this is signalling and i wouldn't argue</li>
-        <li style="margin-bottom: 20px;">ai - to whom i owe partial um ok majority of the credits of this website</li>
-        <li style="margin-bottom: 20px;">india - specifically how to solve its problems and help it grow. i need to learn a lot though</li>
-        
-    </ul>
-</div>
+<body>
+    <canvas id="galaxyCanvas"></canvas>
 
-         <script>
-            const canvas = document.getElementById('galaxyCanvas');
-            const ctx = canvas.getContext('2d');
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="writings.html">Writings</a>
+        <a href="interests.html">Interests</a>
+        <a href="about.html">About Me</a>
+    </nav>
 
-            function resizeCanvas() {
-                canvas.width = window.innerWidth;
-                canvas.height = window.innerHeight;
-            }
+    <div class="content">
+        <h1>Interests</h1>
+        <p>my interests, in no specific order, include</p>
+        <ul style="list-style: none; padding-left: 0;">
+            <li style="margin-bottom: 20px;">math - math was the subject that came to me naturally and effortlessly. I like solving
+                competetive math problems although I'm a bit rusty now</li>
+            <li style="margin-bottom: 20px;">statistics - i was introduced to actual statistics thanks to the actuarial science
+                course.</li>
+            <li style="margin-bottom: 20px;">puzzles - i like solving puzzles, like jane street and cs50x puzzle day. also the
+                project euler problems</li>
+            <li style="margin-bottom: 20px;">music - i'm learning piano. atleast trying to.</li>
+            <li style="margin-bottom: 20px;">reading - i like to read non-fiction books</li>
+            <li style="margin-bottom: 20px;">neuroscience - the brain fascinates me. i have surface level knowledge but it seems
+                fun</li>
+            <li style="margin-bottom: 20px;">game theory - you could say all this is signalling and i wouldn't argue</li>
+            <li style="margin-bottom: 20px;">ai - to whom i owe partial um ok majority of the credits of this website</li>
+            <li style="margin-bottom: 20px;">india - specifically how to solve its problems and help it grow. i need to learn a
+                lot though</li>
 
-            window.addEventListener('resize', resizeCanvas);
-            resizeCanvas();
+        </ul>
+    </div>
 
-            const stars = [];
-            const starCount = 500;
+    <script>
+        const canvas = document.getElementById('galaxyCanvas');
+        const ctx = canvas.getContext('2d');
 
-            function initStars() {
-                for (let i = 0; i < starCount; i++) {
-                    stars.push({
-                        x: Math.random() * canvas.width,
-                        y: Math.random() * canvas.height,
-                        radius: Math.random() * 1.5 + 0.5,
-                        speed: Math.random() * 0.5 + 0.2,
-                    });
-                }
-            }
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
 
-            function drawStars() {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
 
-                stars.forEach(star => {
-                    ctx.beginPath();
-                    ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-                    ctx.fillStyle = 'white';
-                    ctx.shadowBlur = 10;
-                    ctx.shadowColor = 'white';
-                    ctx.fill();
+        const stars = [];
+        const starCount = 500;
 
-                    star.y += star.speed;
-                    if (star.y > canvas.height) {
-                        star.y = 0;
-                        star.x = Math.random() * canvas.width;
-                    }
+        function initStars() {
+            for (let i = 0; i < starCount; i++) {
+                stars.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    radius: Math.random() * 1.5 + 0.5,
+                    speed: Math.random() * 0.5 + 0.2,
                 });
             }
+        }
 
-            function animate() {
-                drawStars();
-                requestAnimationFrame(animate);
-            }
+        function drawStars() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-            initStars();
-            animate();
-        </script>
-    </body>
-    </html>
+            stars.forEach(star => {
+                ctx.beginPath();
+                ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+                ctx.fillStyle = 'white';
+                ctx.shadowBlur = 10;
+                ctx.shadowColor = 'white';
+                ctx.fill();
+
+                star.y += star.speed;
+                if (star.y > canvas.height) {
+                    star.y = 0;
+                    star.x = Math.random() * canvas.width;
+                }
+            });
+        }
+
+        function animate() {
+            drawStars();
+            requestAnimationFrame(animate);
+        }
+
+        initStars();
+        animate();
+    </script>
+</body>
+
+</html>
