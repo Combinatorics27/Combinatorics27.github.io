@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ram's website</title>
     <style>
-                body {
+                        body {
             margin: 0;
-            /* overflow: hidden; */
-            /* Remove this line or change it to overflow: auto; */
+           overflow: auto; /* added overflow property */
             background: #000005;
             font-family: poppins, sans-serif;
             color: white;
@@ -20,7 +19,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
+            width: 100%;  /* Make the starfield fill full width */
             height: 100%;
             z-index: -1;
         }
@@ -29,7 +28,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
+            width: 100%;  /* Make the navigation bar fill full width */
             background: rgba(0, 0, 0, 0.7);
             display: flex;
             justify-content: center;
@@ -57,7 +56,7 @@
             background: rgba(0, 0, 0, 0.7);
             padding: 20px;
             display: inline-block;
-            /* overflow-y: auto; Remove this line*/
+            overflow-y: auto; /* Re-added overflow property */
             max-height: calc(100vh - 160px);
         }
 
