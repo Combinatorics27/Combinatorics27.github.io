@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ram's website</title>
     <style>
-                        body {
+                       body {
     margin: 0;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Hide unnecessary scrollbars */
     background: #000005;
     font-family: poppins, sans-serif;
     color: white;
+    overflow-y: scroll; /* Allow natural vertical scrolling */
 }
 
+html {
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
         canvas {
             display: block;
             position: fixed;
@@ -57,8 +59,7 @@
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     box-sizing: border-box;
-    max-height: 100vh; /* Ensure content doesn't overflow */
-    overflow: hidden; /* Remove internal scrollbar */
+    min-height: 100vh; /* Allow content to grow beyond the viewport */
 }
 
         .content h1 {
