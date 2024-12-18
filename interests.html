@@ -7,12 +7,13 @@
     <title>ram's website</title>
     <style>
                         body {
-            margin: 0;
-           overflow: auto; /* added overflow property */
-            background: #000005;
-            font-family: poppins, sans-serif;
-            color: white;
-        }
+    margin: 0;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide unnecessary scrollbars */
+    background: #000005;
+    font-family: poppins, sans-serif;
+    color: white;
+}
 
         canvas {
             display: block;
@@ -49,16 +50,16 @@
         }
 
         .content {
-            position: relative;
-            margin-top: 80px;
-            text-align: center;
-            z-index: 1;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            display: inline-block;
-            overflow-y: auto; /* Re-added overflow property */
-            max-height: calc(100vh - 160px);
-        }
+    position: relative;
+    margin-top: 80px;
+    text-align: center;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    box-sizing: border-box;
+    max-height: 100vh; /* Ensure content doesn't overflow */
+    overflow: hidden; /* Remove internal scrollbar */
+}
 
         .content h1 {
             font-size: 48px;
