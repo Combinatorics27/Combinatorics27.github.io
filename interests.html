@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ram's website</title>
         <style>
-            body {
+           body {
     margin: 0;
-    overflow: hidden;
+    /* overflow: hidden; */ /* Remove this line or change it to overflow: auto; */
     background: #000005;
     font-family: poppins, sans-serif;
     color: white;
@@ -48,15 +48,15 @@ nav a:hover {
 }
 
 .content {
-    position: relative; /* Changed to relative */
-    margin-top: 80px; /* Add margin to prevent overlap with the nav bar */
+    position: relative;
+    margin-top: 80px;
     text-align: center;
     z-index: 1;
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
-    display: inline-block; /* Make width adapt to content */
-    overflow-y: auto; /* Allow vertical scrolling if content overflows */
-    max-height: calc(100vh - 160px); /* Limit the height to 100vh - (navigation bar height + margin) */
+    display: inline-block;
+    overflow-y: auto;
+    max-height: calc(100vh - 160px);
 }
 
 .content h1 {
