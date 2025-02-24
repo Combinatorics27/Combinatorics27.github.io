@@ -1,146 +1,341 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ram's website</title>
-        <style>
-            body {
-                margin: 0;
-                overflow: hidden;
-                background: #000005;
-                font-family: poppins, sans-serif;
-                color: white;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ram's website</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Meta tags for SEO and social sharing -->
+    <meta name="description" content="Ram Keswani - CA Finalist solving hard problems to create a positive impact on the world">
+    <meta property="og:title" content="Ram Keswani">
+    <meta property="og:description" content="CA Finalist solving hard problems to create a positive impact on the world">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #000005;
+            font-family: poppins, sans-serif;
+            color: white;
+        }
+
+        canvas {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #39CCCC;
+        }
+        
+        nav a.active {
+            color: #39CCCC;
+            border-bottom: 2px solid #39CCCC;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            display: inline-block;
+        }
+
+        .content h1 {
+            font-size: 48px;
+            margin: 10px 0;
+            color: white;
+        }
+
+        .content p {
+            font-size: 20px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        
+        /* Smooth hover transitions for all interactive elements */
+        a, button {
+            transition: all 0.3s ease;
+        }
+        
+        /* Subtle zoom effect for links */
+        .content a:hover {
+            transform: scale(1.05);
+            display: inline-block;
+        }
+        
+        /* Footer styling */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            text-align: center;
+            font-size: 14px;
+            z-index: 5;
+        }
+        
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 20px;
+            background: rgba(57, 204, 204, 0.7);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 10;
+        }
+        
+        .back-to-top:hover {
+            background: rgba(57, 204, 204, 1);
+        }
+        
+        /* Loading animation */
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000005;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.5s;
+        }
+        
+        .loader.fade {
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .loader span {
+            width: 10px;
+            height: 10px;
+            background: white;
+            border-radius: 50%;
+            margin: 0 5px;
+            animation: pulse 1.5s infinite ease-in-out;
+        }
+        
+        .loader span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .loader span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(0.5);
+                opacity: 0.5;
             }
-
-            canvas {
-                display: block;
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: -1;
+            50% {
+                transform: scale(1);
+                opacity: 1;
             }
+        }
+        
+        /* Social media icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+        }
+        
+        .social-icons a:hover {
+            color: #39CCCC;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading animation -->
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-            nav {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                background: rgba(0, 0, 0, 0.7);
-                display: flex;
-                justify-content: center;
-                padding: 10px 0;
-                z-index: 10;
-            }
+    <canvas id="galaxyCanvas"></canvas>
 
-            nav a {
-                color: white;
-                text-decoration: none;
-                margin: 0 15px;
-                font-size: 18px;
-                transition: color 0.3s;
-            }
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="interests.html">Interests</a>
+        <a href="writings.html">Writings</a>
+        <a href="about.html">About Me</a>
+    </nav>
 
-            nav a:hover {
-                color: #39CCCC;
-            }
-
-            .content {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                text-align: center;
-                z-index: 1;
-                background: rgba(0, 0, 0, 0.7);
-                padding: 20px;
-                display: inline-block;
-            }
-
-            .content h1 {
-                font-size: 48px;
-                margin: 10px 0;
-                color: white;
-            }
-
-            .content p {
-                font-size: 20px;
-                color: white;
-                margin-bottom: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <canvas id="galaxyCanvas"></canvas>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="interests.html">Interests</a>
-            <a href="writings.html">Writings</a>
-            <a href="about.html">About Me</a>
-        </nav>
-
-        <div class="content">
+    <div class="content">
             <h1 style="color: gray;">About Me</h1>
 <h4>books i've read -<a href="https://www.goodreads.com/user/show/135405736-ram-keswani" target="_blank">goodreads profile</a></h4>
           <h4>corporate appropriate profile -<a href="https://www.linkedin.com/in/ramkeswani27/" target="_blank">linkedin</a></h4>
           <h4>visual montage? cinematography? -<a href="http://www.youtube.com/@AudiblePixelsYT" target="_blank">yt channel</a></h4>
         </div>
+    
+    <!-- Back to top button -->
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+    
+    <!-- Footer -->
+    <footer>
+        © 2025 Ram Keswani | Made with Claude 3.7 (i'm shocked)
+    </footer>
 
-         <script>
-            const canvas = document.getElementById('galaxyCanvas');
-            const ctx = canvas.getContext('2d');
+    <script>
+        const canvas = document.getElementById('galaxyCanvas');
+        const ctx = canvas.getContext('2d');
 
-            function resizeCanvas() {
-                canvas.width = window.innerWidth;
-                canvas.height = window.innerHeight;
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        const stars = [];
+        const starCount = 500;
+
+        function initStars() {
+            for (let i = 0; i < starCount; i++) {
+                stars.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    radius: Math.random() * 1.5 + 0.5,
+                    speed: Math.random() * 0.5 + 0.2,
+                });
             }
+        }
 
-            window.addEventListener('resize', resizeCanvas);
-            resizeCanvas();
-
-            const stars = [];
-            const starCount = 500;
-
-            function initStars() {
-                for (let i = 0; i < starCount; i++) {
-                    stars.push({
-                        x: Math.random() * canvas.width,
-                        y: Math.random() * canvas.height,
-                        radius: Math.random() * 1.5 + 0.5,
-                        speed: Math.random() * 0.5 + 0.2,
-                    });
+        function drawStars() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            stars.forEach(star => {
+                ctx.beginPath();
+                ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+                
+                // Add slight color variation to stars
+                const r = 255;
+                const g = 255;
+                const b = Math.floor(Math.random() * 55) + 200; // Slight blue variation
+                ctx.fillStyle = `rgb(${r}, ${g}, ${b})`;
+                
+                ctx.shadowBlur = 10;
+                ctx.shadowColor = `rgb(${r}, ${g}, ${b})`;
+                ctx.fill();
+                
+                star.y += star.speed;
+                if (star.y > canvas.height) {
+                    star.y = 0;
+                    star.x = Math.random() * canvas.width;
                 }
+            });
+        }
+
+        function animate() {
+            drawStars();
+            requestAnimationFrame(animate);
+        }
+
+        // Set active navigation link based on current page
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('nav a');
+            
+            navLinks.forEach(link => {
+                const linkPage = link.getAttribute('href');
+                if (linkPage === currentPage || 
+                    (currentPage === '' && linkPage === 'index.html')) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Loading animation
+            const loader = document.querySelector('.loader');
+            if (loader) {
+                setTimeout(() => {
+                    loader.classList.add('fade');
+                    setTimeout(() => {
+                        loader.style.display = 'none';
+                    }, 500);
+                }, 1000);
             }
-
-            function drawStars() {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-                stars.forEach(star => {
-                    ctx.beginPath();
-                    ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-                    ctx.fillStyle = 'white';
-                    ctx.shadowBlur = 10;
-                    ctx.shadowColor = 'white';
-                    ctx.fill();
-
-                    star.y += star.speed;
-                    if (star.y > canvas.height) {
-                        star.y = 0;
-                        star.x = Math.random() * canvas.width;
+            
+            // Show back to top button on scroll (for pages with scrolling)
+            const backToTopButton = document.querySelector('.back-to-top');
+            if (backToTopButton) {
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 300) {
+                        backToTopButton.style.display = 'block';
+                    } else {
+                        backToTopButton.style.display = 'none';
                     }
                 });
             }
+        });
+        
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
 
-            function animate() {
-                drawStars();
-                requestAnimationFrame(animate);
-            }
-
-            initStars();
-            animate();
-        </script>
-    </body>
-    </html>
+        initStars();
+        animate();
+    </script>
+</body>
+</html>
