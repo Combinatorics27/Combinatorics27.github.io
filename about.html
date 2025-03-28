@@ -4,27 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ram's website</title>
-    
+
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
-    
+
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+
     <!-- Meta tags for SEO and social sharing -->
     <meta name="description" content="Ram Keswani - CA Finalist solving hard problems to create a positive impact on the world">
     <meta property="og:title" content="Ram Keswani">
     <meta property="og:description" content="CA Finalist solving hard problems to create a positive impact on the world">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    
+
     <style>
+        :root {
+            --primary-bg: #000005;
+            --text-color: white;
+            --accent-color: #39CCCC; /* Teal */
+            --content-bg: rgba(0, 0, 0, 0.75);
+            --nav-bg: rgba(0, 0, 0, 0.8);
+            --footer-bg: rgba(0, 0, 0, 0.8);
+            --star-base-color: rgb(255, 255, 220); /* Slightly yellowish white */
+            --star-shadow-color: rgba(255, 255, 220, 0.7);
+        }
+
         body {
             margin: 0;
-            overflow: hidden;
-            background: #000005;
-            font-family: poppins, sans-serif;
-            color: white;
+            overflow: hidden; /* Prevent scrollbars unless content overflows */
+            background: var(--primary-bg);
+            font-family: 'Poppins', sans-serif; /* Consider adding a fallback font */
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         canvas {
@@ -38,85 +52,154 @@
         }
 
         nav {
-            position: fixed;
+            position: fixed; /* Changed from absolute for better viewport handling */
             top: 0;
             left: 0;
             width: 100%;
-            background: rgba(0, 0, 0, 0.7);
+            background: var(--nav-bg);
             display: flex;
             justify-content: center;
-            padding: 10px 0;
+            padding: 15px 0;
             z-index: 10;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
         }
 
         nav a {
-            color: white;
+            color: var(--text-color);
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 20px;
             font-size: 18px;
-            transition: color 0.3s;
+            transition: color 0.3s ease;
+            position: relative; /* For the underline animation */
+            padding-bottom: 5px; /* Space for underline */
         }
 
-        nav a:hover {
-            color: #39CCCC;
+        /* Animated underline effect */
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            margin-top: 5px;
+            right: 0;
+            background: var(--accent-color);
+            transition: width 0.3s ease;
+            -webkit-transition: width 0.3s ease;
         }
-        
+
+        nav a:hover::after,
+        nav a.active::after {
+            width: 100%;
+            left: 0;
+            background: var(--accent-color);
+        }
+
+
+        nav a:hover,
         nav a.active {
-            color: #39CCCC;
-            border-bottom: 2px solid #39CCCC;
+            color: var(--accent-color);
+        }
+
+        /* Remove default border for active, use the ::after element */
+        nav a.active {
+            border-bottom: none;
+        }
+
+        .main-container {
+            flex-grow: 1; /* Allows footer to stick to bottom */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 60px; /* Account for nav height */
+            padding-bottom: 50px; /* Account for footer height */
         }
 
         .content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             text-align: center;
             z-index: 1;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            display: inline-block;
+            background: var(--content-bg);
+            padding: 30px 40px;
+            border-radius: 8px;
+            max-width: 600px;
+            /* Animation */
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .content.visible {
+             opacity: 1;
+             transform: translateY(0);
         }
 
         .content h1 {
             font-size: 48px;
-            margin: 10px 0;
-            color: white;
+            margin: 0 0 25px 0; /* Adjusted margin */
+            color: var(--text-color); /* Use white instead of gray for better contrast */
+            font-weight: 600;
         }
 
-        .content p {
-            font-size: 20px;
-            color: white;
-            margin-bottom: 10px;
+        /* Style all description lines similarly */
+        .content h4 {
+            font-size: 18px; /* Slightly smaller */
+            color: rgba(255, 255, 255, 0.9); /* Slightly dimmer white */
+            margin-bottom: 15px;
+            font-weight: 400;
+            line-height: 1.5;
         }
-        
-        /* Smooth hover transitions for all interactive elements */
-        a, button {
+
+        .content a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-block; /* Needed for transform */
+        }
+
+        /* Enhanced hover effect for links */
+        .content a:hover {
+            transform: scale(1.08);
+            text-shadow: 0 0 8px var(--accent-color);
+        }
+
+        /* Social media icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 25px; /* Increased gap */
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            color: var(--text-color);
+            font-size: 28px; /* Slightly larger icons */
             transition: all 0.3s ease;
         }
-        
-        /* Subtle zoom effect for links */
-        .content a:hover {
-            transform: scale(1.05);
-            display: inline-block;
+
+        .social-icons a:hover {
+            color: var(--accent-color);
+            transform: scale(1.2) translateY(-3px); /* Enhanced hover */
         }
-        
+
         /* Footer styling */
         footer {
-            position: fixed;
-            bottom: 0;
+            /* position: fixed; Remove fixed positioning */
+            /* bottom: 0; */
             width: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 10px 0;
+            background: var(--footer-bg);
+            padding: 15px 0;
             text-align: center;
             font-size: 14px;
             z-index: 5;
+            margin-top: auto; /* Pushes footer to bottom in flex container */
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
         }
-        
-        /* Back to top button */
+
+        /* Back to top button (keep styling, but might not be needed if page doesn't scroll) */
         .back-to-top {
             position: fixed;
-            bottom: 40px;
+            bottom: 60px; /* Adjusted position above footer */
             right: 20px;
             background: rgba(57, 204, 204, 0.7);
             color: white;
@@ -126,14 +209,15 @@
             height: 40px;
             font-size: 20px;
             cursor: pointer;
-            display: none;
+            display: none; /* Hidden by default */
             z-index: 10;
+            transition: background 0.3s ease;
         }
-        
+
         .back-to-top:hover {
             background: rgba(57, 204, 204, 1);
         }
-        
+
         /* Loading animation */
         .loader {
             position: fixed;
@@ -141,64 +225,38 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: #000005;
+            background: var(--primary-bg);
             display: flex;
             justify-content: center;
             align-items: center;
             z-index: 1000;
-            transition: opacity 0.5s;
+            transition: opacity 0.6s ease-out;
         }
-        
+
         .loader.fade {
             opacity: 0;
             pointer-events: none;
         }
-        
+
+        /* Modified loader animation */
         .loader span {
-            width: 10px;
-            height: 10px;
-            background: white;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: var(--text-color);
             border-radius: 50%;
-            margin: 0 5px;
-            animation: pulse 1.5s infinite ease-in-out;
+            margin: 0 6px;
+            animation: loader-bounce 1.4s infinite ease-in-out both;
         }
-        
-        .loader span:nth-child(2) {
-            animation-delay: 0.2s;
+
+        .loader span:nth-child(1) { animation-delay: -0.32s; }
+        .loader span:nth-child(2) { animation-delay: -0.16s; }
+
+        @keyframes loader-bounce {
+            0%, 80%, 100% { transform: scale(0); }
+            40% { transform: scale(1.0); }
         }
-        
-        .loader span:nth-child(3) {
-            animation-delay: 0.4s;
-        }
-        
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(0.5);
-                opacity: 0.5;
-            }
-            50% {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-        
-        /* Social media icons */
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        
-        .social-icons a {
-            color: white;
-            font-size: 24px;
-        }
-        
-        .social-icons a:hover {
-            color: #39CCCC;
-            transform: translateY(-3px);
-        }
+
     </style>
 </head>
 <body>
@@ -215,24 +273,31 @@
         <a href="index.html">Home</a>
         <a href="interests.html">Interests</a>
         <a href="writings.html">Writings</a>
+        <!-- Add active class dynamically via JS -->
         <a href="about.html">About Me</a>
     </nav>
 
-    <div class="content">
-        <h1 style="color: gray;">About Me</h1> <h4>books i've read - <a href="https://www.goodreads.com/user/show/135405736-ram-keswani" target="_blank">goodreads profile</a></h4> <h4>corporate appropriate profile - <a href="https://www.linkedin.com/in/ramkeswani27/" target="_blank">linkedin</a></h4> <h4>visual montage? cinematography? - <a href="http://www.youtube.com/@AudiblePixelsYT" target="_blank">yt channel</a></h4>
-        
-        <!-- Social Icons -->
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/ramkeswani27/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.goodreads.com/user/show/135405736-ram-keswani" target="_blank"><i class="fab fa-goodreads"></i></a>
-            <a href="http://www.youtube.com/@AudiblePixelsYT" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="https://ramkeswani.substack.com/" target="_blank"><i class="fas fa-newspaper"></i></a>
+    <!-- Main content wrapper -->
+    <div class="main-container">
+        <div class="content">
+            <h1>About Me</h1>
+            <h4>Books I've read - <a href="https://www.goodreads.com/user/show/135405736-ram-keswani" target="_blank" rel="noopener noreferrer">Goodreads profile</a></h4>
+            <h4>Corporate appropriate profile - <a href="https://www.linkedin.com/in/ramkeswani27/" target="_blank" rel="noopener noreferrer">LinkedIn</a></h4>
+            <h4>Visual montage? Cinematography? - <a href="http://www.youtube.com/@AudiblePixelsYT" target="_blank" rel="noopener noreferrer">YT channel</a></h4>
+
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ramkeswani27/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.goodreads.com/user/show/135405736-ram-keswani" target="_blank" rel="noopener noreferrer" aria-label="Goodreads"><i class="fab fa-goodreads"></i></a>
+                <a href="http://www.youtube.com/@AudiblePixelsYT" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://ramkeswani.substack.com/" target="_blank" rel="noopener noreferrer" aria-label="Substack"><i class="fas fa-newspaper"></i></a>
+            </div>
         </div>
     </div>
-    
+
     <!-- Back to top button -->
-    <button class="back-to-top" onclick="scrollToTop()">↑</button>
-    
+    <button class="back-to-top" onclick="scrollToTop()" aria-label="Scroll to top">↑</button>
+
     <!-- Footer -->
     <footer>
         © 2025 Ram Keswani | Made with Claude 3.7 (i'm shocked)
@@ -241,96 +306,215 @@
     <script>
         const canvas = document.getElementById('galaxyCanvas');
         const ctx = canvas.getContext('2d');
+        let stars = [];
+        let shootingStars = [];
+        const starCount = 800; // Increased star count slightly
+        const shootingStarInterval = 2000; // ms between potential shooting stars
+        let lastShootingStarTime = 0;
+        let mouseX = window.innerWidth / 2;
+        let mouseY = window.innerHeight / 2;
+        const mouseInteractionRadius = 100; // Radius around cursor for interaction
 
         function resizeCanvas() {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
+            // Reinitialize stars on resize to distribute them properly
+            initStars();
         }
 
         window.addEventListener('resize', resizeCanvas);
-        resizeCanvas();
+        // Track mouse movement
+        window.addEventListener('mousemove', (e) => {
+             mouseX = e.clientX;
+             mouseY = e.clientY;
+        });
 
-        const stars = [];
-        const starCount = 500;
+        // Star class for better organization
+        class Star {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.z = Math.random() * canvas.width; // Depth for parallax
+                this.radius = Math.random() * 1.2 + 0.3; // Smaller base radius
+                this.opacity = Math.random() * 0.5 + 0.5; // Random base opacity
+                this.speed = this.opacity * 0.5 + 0.1; // Speed related to opacity/brightness
+                this.baseColor = `rgba(255, 255, ${Math.floor(Math.random() * 55) + 200}, ${this.opacity})`;
+                this.glowColor = `rgba(255, 255, 255, 0.8)`; // Brighter glow for interaction
+            }
 
-        function initStars() {
-            for (let i = 0; i < starCount; i++) {
-                stars.push({
-                    x: Math.random() * canvas.width,
-                    y: Math.random() * canvas.height,
-                    radius: Math.random() * 1.5 + 0.5,
-                    speed: Math.random() * 0.5 + 0.2,
-                });
+            update() {
+                // Move star downwards
+                this.y += this.speed;
+                if (this.y > canvas.height + this.radius) {
+                    this.y = -this.radius;
+                    this.x = Math.random() * canvas.width;
+                    this.z = Math.random() * canvas.width; // Reset depth
+                }
+            }
+
+            draw(ctx, mouseX, mouseY) {
+                // Parallax effect calculation
+                const parallaxFactor = this.z / canvas.width;
+                const parallaxX = (mouseX - canvas.width / 2) * parallaxFactor * 0.1; // Subtle parallax
+                const parallaxY = (mouseY - canvas.height / 2) * parallaxFactor * 0.1;
+
+                const drawX = this.x + parallaxX;
+                const drawY = this.y + parallaxY;
+
+                // Calculate distance to mouse
+                const dx = drawX - mouseX;
+                const dy = drawY - mouseY;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+
+                let currentRadius = this.radius;
+                let currentFill = this.baseColor;
+                let shadowBlur = 5; // Base shadow
+
+                // Make stars near cursor glow brighter/larger
+                if (dist < mouseInteractionRadius) {
+                    const proximity = 1 - (dist / mouseInteractionRadius);
+                    currentRadius = this.radius + proximity * 1.5; // Increase radius based on proximity
+                    currentFill = this.glowColor; // Use glow color
+                    shadowBlur = 10 + proximity * 10; // Increase shadow blur
+                }
+
+                ctx.beginPath();
+                ctx.arc(drawX, drawY, currentRadius, 0, Math.PI * 2);
+                ctx.fillStyle = currentFill;
+                ctx.shadowColor = currentFill; // Use the fill color for shadow
+                ctx.shadowBlur = shadowBlur;
+                ctx.fill();
             }
         }
 
-        function drawStars() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            
-            stars.forEach(star => {
+        // Shooting Star class
+        class ShootingStar {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * (canvas.height / 2); // Start near top
+                this.length = Math.random() * 80 + 50;
+                this.speed = Math.random() * 10 + 10; // Faster speed
+                this.angle = Math.PI / 4 + (Math.random() * Math.PI / 6 - Math.PI / 12); // Diagonal angle, slightly randomized
+                this.vx = Math.cos(this.angle) * this.speed;
+                this.vy = Math.sin(this.angle) * this.speed;
+                this.opacity = 1;
+            }
+
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+                // Fade out slightly as it travels (optional)
+                // this.opacity -= 0.005;
+
+                // Remove if off screen or faded
+                return this.x < canvas.width + this.length && this.y < canvas.height + this.length && this.opacity > 0;
+            }
+
+            draw(ctx) {
                 ctx.beginPath();
-                ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-                
-                // Add slight color variation to stars
-                const r = 255;
-                const g = 255;
-                const b = Math.floor(Math.random() * 55) + 200; // Slight blue variation
-                ctx.fillStyle = `rgb(${r}, ${g}, ${b})`;
-                
-                ctx.shadowBlur = 10;
-                ctx.shadowColor = `rgb(${r}, ${g}, ${b})`;
-                ctx.fill();
-                
-                star.y += star.speed;
-                if (star.y > canvas.height) {
-                    star.y = 0;
-                    star.x = Math.random() * canvas.width;
-                }
-            });
+                const tailX = this.x - this.vx * (this.length / this.speed);
+                const tailY = this.y - this.vy * (this.length / this.speed);
+                const gradient = ctx.createLinearGradient(this.x, this.y, tailX, tailY);
+                gradient.addColorStop(0, `rgba(255, 255, 255, ${this.opacity})`);
+                gradient.addColorStop(1, `rgba(255, 255, 255, 0)`);
+
+                ctx.strokeStyle = gradient;
+                ctx.lineWidth = 1.5; // Thin tail
+                ctx.moveTo(this.x, this.y);
+                ctx.lineTo(tailX, tailY);
+                ctx.stroke();
+            }
         }
 
-        function animate() {
-            drawStars();
+
+        function initStars() {
+            stars = []; // Clear existing stars
+            for (let i = 0; i < starCount; i++) {
+                stars.push(new Star());
+            }
+        }
+
+        function trySpawnShootingStar(currentTime) {
+             if (currentTime - lastShootingStarTime > shootingStarInterval) {
+                 if (Math.random() < 0.2) { // 20% chance every interval
+                    shootingStars.push(new ShootingStar());
+                    lastShootingStarTime = currentTime;
+                 }
+             }
+        }
+
+        function animate(currentTime) {
+            // Clear canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.shadowBlur = 0; // Reset shadow blur before drawing stars
+
+            // Update and draw regular stars
+            stars.forEach(star => {
+                star.update();
+                star.draw(ctx, mouseX, mouseY);
+            });
+
+            // Try to spawn a shooting star
+            trySpawnShootingStar(currentTime);
+
+            // Update and draw shooting stars
+            ctx.shadowBlur = 0; // No shadow for shooting stars
+            shootingStars = shootingStars.filter(ss => {
+                ss.update();
+                ss.draw(ctx);
+                return ss.x < canvas.width + ss.length * 2 && ss.y < canvas.height + ss.length * 2; // Keep if still potentially visible
+            });
+
+
             requestAnimationFrame(animate);
         }
 
         // Set active navigation link based on current page
         document.addEventListener('DOMContentLoaded', function() {
-            const currentPage = window.location.pathname.split('/').pop();
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html'; // Default to index if path is '/'
             const navLinks = document.querySelectorAll('nav a');
-            
+
             navLinks.forEach(link => {
                 const linkPage = link.getAttribute('href');
-                if (linkPage === currentPage || 
-                    (currentPage === '' && linkPage === 'index.html')) {
+                // Make comparison robust (e.g. 'about.html' vs '/about.html')
+                if (linkPage === currentPage || linkPage === '/' + currentPage) {
                     link.classList.add('active');
                 }
             });
-            
-            // Loading animation
+
+            // Loading animation handling
             const loader = document.querySelector('.loader');
+            const content = document.querySelector('.content');
             if (loader) {
                 setTimeout(() => {
                     loader.classList.add('fade');
+                     // Start content animation after loader starts fading
+                     setTimeout(() => {
+                        if(content) content.classList.add('visible');
+                     }, 200); // Small delay after loader fade starts
+
                     setTimeout(() => {
                         loader.style.display = 'none';
-                    }, 500);
-                }, 1000);
+                    }, 600); // Match loader fade transition duration
+                }, 1000); // Initial delay before fading loader
+            } else {
+                 // If no loader, show content immediately
+                 if(content) content.classList.add('visible');
             }
-            
-            // Show back to top button on scroll (for pages with scrolling)
+
+            // Show back to top button logic (if needed for other pages)
             const backToTopButton = document.querySelector('.back-to-top');
-            if (backToTopButton) {
-                window.addEventListener('scroll', function() {
-                    if (window.scrollY > 300) {
-                        backToTopButton.style.display = 'block';
-                    } else {
-                        backToTopButton.style.display = 'none';
-                    }
-                });
+            if (backToTopButton && document.body.scrollHeight > window.innerHeight) { // Only add listener if scrolling is possible
+                 window.addEventListener('scroll', function() {
+                     if (window.scrollY > 300) {
+                         backToTopButton.style.display = 'block';
+                     } else {
+                         backToTopButton.style.display = 'none';
+                     }
+                 });
             }
         });
-        
+
         // Scroll to top function
         function scrollToTop() {
             window.scrollTo({
@@ -339,8 +523,10 @@
             });
         }
 
-        initStars();
-        animate();
+        // Initial setup
+        resizeCanvas(); // Call resize first
+        initStars();    // Then init stars
+        requestAnimationFrame(animate); // Start animation loop
     </script>
 </body>
 </html>
