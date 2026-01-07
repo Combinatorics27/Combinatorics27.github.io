@@ -1,0 +1,6 @@
+title: Ram Keswani
+description: Personal website and notes
+theme: minima
+markdown: kramdown
+
+permalink: /:categories/:title/
