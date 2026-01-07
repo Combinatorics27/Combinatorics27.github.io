@@ -1,6 +1,8 @@
 title: Ram Keswani
 description: Personal website and notes
 theme: minima
+minima:
+  skin: dark
 markdown: kramdown
 
 permalink: /:categories/:title/
