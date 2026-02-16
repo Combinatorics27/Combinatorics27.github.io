@@ -25,6 +25,7 @@ the activities file is in .xls format and we'll stick to it since my excel is st
 | Ride          | 62    |
 | Run           | 122   |
 | Walk          | 62    |
+
 **Total activities:** 249
 
 - i've been thinking lately about how my jogging pace hasn't improved much over the years and was kind of disappointed - this data now tells me why.
@@ -42,6 +43,7 @@ what took longer than i expected (around 10-15 minutes was cleaning the date col
 | 2024 | 251.96 |
 | 2025 | 186.73 |
 | 2026 | 19.58 |
+
 **Total Distance (All Years): 1485.48**
 
 - this is interesting. (sidenote - i should probably guess the analytics before i see them.)
