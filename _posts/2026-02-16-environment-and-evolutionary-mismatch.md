@@ -1,7 +1,6 @@
-
 ---
 title: "TIL: environment and evolutionary mismatch"
-date: 2026-02-15
+date: 2026-02-16
 categories: til
 ---
 
