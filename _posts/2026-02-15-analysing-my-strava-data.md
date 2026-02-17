@@ -52,5 +52,22 @@ what took longer than i expected (around 10-15 minutes was cleaning the date col
 - made a area chart of qtr vs distance on excel and that made me realise that 2021 i did a lot of cycling and it's defintely not right comparing cycling distance with jogging distance.
 - need to normalise it to make it comparable
 
-its time to sleep now so ill push this draft and edit it tomorrow
+normalising distance - and this is based on my personal experience - i'm using 1km jogging = 3km cycling and since i've jogged more, i'll convert the cycling distances * 1/3 for normalisation. 
+
+after normalisation, what we get is 
+
+| Year | Normalised Distance (km) |
+|------|---------------------------|
+| 2021 | 245 |
+| 2022 | 147 |
+| 2023 | 135 |
+| 2024 | 252 |
+| 2025 | 177 |
+| 2026 | 20  |
+
+**Total Normalised Distance (All Years): 975.52km**
+
+
+
+
 
