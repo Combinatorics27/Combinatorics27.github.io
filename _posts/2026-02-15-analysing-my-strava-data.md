@@ -75,6 +75,17 @@ if we do month vs distance, we get an interesting graph
 
 - we get peaks at nov - jan and a peak at august. its probably just randomness since the sample (250 activities over 5 years) isn't significant enough. or maybe there are reasons that my brain just can't think of. interesting nonetheless.
 
+- wow. i seem to have found something awe-like. this is what luck surface area is all about.
+- so there's a column in the strava dataset called Filename and the filenames are formatted as "activities/4725964075.gpx". the data was in chronologically ascending order and i immediately noticed how the numbers in the filenames were increasing monotonically. i realised that it might the case that strava generates a sequential filename basis the time that activity is logged on their servers. so if i log an activity at 8AM and someone else in some other part of the world logs in their activity just a second later, their filename will have my number+1. so what this means is that i can find out the total number of activities logged throughout the world on strava between any 2 of my activities.
+
+- finding out the daily average number of activities logged on strava
+
+![Average Activities per Day](/assets/images/avg-activities.png)
+
+- a very interesting graph. there are a couple of major outliers (will need to look into what causes them) but otherwise it looks correct. there were around 5million/50lakh activities logged on strava per day in 2021/22 and then it has grown to around 10million/1crore activities per day in 2025/26.
+
+multiple further analysis needs to be done but sleep is important as well, so we'll continue tomorrow.
+
 
 
 
