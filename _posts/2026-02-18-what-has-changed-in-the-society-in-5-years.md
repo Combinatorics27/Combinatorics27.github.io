@@ -1,7 +1,7 @@
 ---
 title: "thoughts: what has changed in the society in 5 years"
 date: 2026-01-18
-categories: thoughts
+categories: til
 ---
 
 i was watching 3blue1brown's cosmic ladder video and i don't know why but it had me thinking about what has changed over the last 5 years. i take 5 years because since i'm 23 now, the periods are comparable.
