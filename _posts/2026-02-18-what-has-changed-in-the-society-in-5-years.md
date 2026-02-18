@@ -1,6 +1,6 @@
 ---
 title: "thoughts: what has changed in the society in 5 years"
-date: 2026-01-18
+date: 2026-02-18
 categories: til
 ---
 
