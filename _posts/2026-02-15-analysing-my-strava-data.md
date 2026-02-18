@@ -67,6 +67,15 @@ after normalisation, what we get is
 
 **Total Normalised Distance (All Years): 975.52km**
 
+![Yearly Distance](/assets/images/yearly-distance.png)
+
+if we do month vs distance, we get an interesting graph 
+
+![Monthly Distance](/assets/images/monthly-distance.png)
+
+- we get peaks at nov - jan and a peak at august. its probably just randomness since the sample (250 activities over 5 years) isn't significant enough. or maybe there are reasons that my brain just can't think of. interesting nonetheless.
+
+
 
 
 
