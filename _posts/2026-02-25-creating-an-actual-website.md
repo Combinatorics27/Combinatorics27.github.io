@@ -61,3 +61,5 @@ also i rarely did anything knowledgeable or value adding from myself. all i did 
 which means that an agent could've done this whole task. an agent who used another llm as an auditor. interesting times we live in. the pace of improvement in ai technology is astounding. but whats even faster is the rate at which we get used to the technology. its actual magic but the magic rarely produces awe now.
 
 the final product - 
+
+![Yearly Distance](/assets/images/website.png)
