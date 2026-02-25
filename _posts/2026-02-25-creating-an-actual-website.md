@@ -45,3 +45,19 @@ then it worked. i could see the preview. deployment successful.
 i copied the domain name https://friendlybets-three.vercel.app to a new tab and pressed login. it took me to the google login page, i selected the mail id, but then it took me back to the login page. i tried again, it took me back to login again. 
 
 so now there was this issue i had to resolve. GPT 5.2 kept telling me to recheck the environment variable URL and API key for supabase at the vercel project. i rechecked again and again. 
+
+then it said that the issue could be that the url site at supabase might not be the correct address of the vercel homepage. checked, and it was correct. 
+
+gpt 5.2 then hallucinated - in that after what it suggested was exhaustively checked, it suggested what i think a software engineer could immediately see to be random guesswork by the ai. it asked me to change the site url at supabase to some callback version of the vercel page. one that in hindsight feels stupid. 
+
+the issue it turned out was that codex had another environment variable in the code that 5.2 didn't know or expect. and all i had to do was add that variable in the vercel settings. 
+
+this took me probably more than 4 hours of focused work. in hindsight i think maybe i should've sticked to just codex. but no 5.2 did tell me once that what codex was proposing - bypassing rls policy and moving to server side (i have no idea what that means) was wrong. and so i had to ask codex not to do that. 
+
+anyways this was one of the most difficult task i've accomplished with ai. and what it has managed to do is make me appreciate software engineers and all the people that work in the fields. it is complex. there were so many options and features just within these 3 sites i used - google cloud console, supabase and vercel. 
+
+also i rarely did anything knowledgeable or value adding from myself. all i did was follow the llm's instructions and copy paste feed it the errors. 
+
+which means that an agent could've done this whole task. an agent who used another llm as an auditor. interesting times we live in. the pace of improvement in ai technology is astounding. but whats even faster is the rate at which we get used to the technology. its actual magic but the magic rarely produces awe now.
+
+the final product - 
