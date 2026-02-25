@@ -39,3 +39,9 @@ and so i had a running website locally. the next step was to deploy it through v
 so i downloaded the github connector. then created a repository and pushed the code form my laptop to github. 
 
 then connected github and vercel and deployed the website. and it failed. so i copied the error and gave it to codex. it changed a file. i committed and pushed the new files to github. then redeployed on vercel. errors again. so back to codex. commit and push. redeploy. errors. codex. commit and push. redeploy. errors. codex. push. redeploy. errors. codex. push. redeploy.
+
+then it worked. i could see the preview. deployment successful. 
+
+i copied the domain name https://friendlybets-three.vercel.app to a new tab and pressed login. it took me to the google login page, i selected the mail id, but then it took me back to the login page. i tried again, it took me back to login again. 
+
+so now there was this issue i had to resolve. GPT 5.2 kept telling me to recheck the environment variable URL and API key for supabase at the vercel project. i rechecked again and again. 
