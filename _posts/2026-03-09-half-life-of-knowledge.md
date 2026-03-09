@@ -4,7 +4,7 @@ date: 2026-03-09
 categories: til
 ---
 
-(half life of knowledge)[https://en.wikipedia.org/wiki/Half-life_of_knowledge] refers to the amount of time it takes for knowledge in a field to be proven wrong or updated by newer knowledge.
+[half life of knowledge](https://en.wikipedia.org/wiki/Half-life_of_knowledge) refers to the amount of time it takes for knowledge in a field to be proven wrong or updated by newer knowledge.
 
 basically that a lot of what we believe to be true today will be shown to be false in the future. exactly how geocentrisim was once the accepted knowledge.
 
