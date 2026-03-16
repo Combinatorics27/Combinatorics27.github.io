@@ -24,12 +24,13 @@ the system atleast for now looks foolproof. the only thing to do is to ensure th
 
 ## habit definitions
 
-mindfulness - do one activity of the healthy minds project app
-exercise - either strength or jogging
-reading - reading atleast a couple pages of a book
-no dopamine flooding activity - no social media or short form content or anything of the like. if using social media, active hunting for knowledge and not getting carried away by the algorithm in the infinite scroll.
+1. mindfulness - do one activity of the healthy minds project app
+2. exercise - either strength or jogging
+3. reading - reading atleast a couple pages of a book
+4. no dopamine flooding activity - no social media or short form content or anything of the like. if using social media, active hunting for knowledge and not getting carried away by the algorithm in the infinite scroll.
 
 Y denotes that i performed the habit that day, except for the last habit where Y means i did not engage in cheap dopamine.
+
 N denotes that i did not perform the habit.
 
 2026-03-16 | Mindfulness: | Exercise: | Reading: | NoDopamineFlood: | Notes:
