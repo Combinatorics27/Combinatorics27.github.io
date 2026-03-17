@@ -33,4 +33,4 @@ Y denotes that i performed the habit that day, except for the last habit where Y
 
 N denotes that i did not perform the habit.
 
-2026-03-16 | Mindfulness: | Exercise: | Reading: | NoDopamineFlood: | Notes:
+2026-03-16 | Mindfulness:Y | Exercise:Strength(chest,triceps) | Reading:Y | NoDopamineFlood:Y | Notes:Brain did get attracted to social media but brain was aware thanks to this log. what's important is to sustain the awareness.
