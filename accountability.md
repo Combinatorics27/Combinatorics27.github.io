@@ -37,10 +37,14 @@ N denotes that i did not perform the habit.
 2026-03-16 | Mindfulness:Y | Exercise:Strength(chest,triceps) | Reading:Y | NoDopamineFlood:Y | NoSetback:Y | Notes:Brain did get attracted to social media but brain was aware thanks to this log. what's important is to sustain the awareness.
 2026-03-17 | Mindfulness:Y | Exercise:Strength(core) | Reading:Y | NoDopamineFlood:Y | NoSetback:Y | Notes:
 2026-03-18 | Mindfulness:Y | Exercise:Walk(3km,36min) | Reading:Y | NoDopamineFlood:Y | NoSetback:Y | Notes:
-2026-03-19 | Mindfulness:Y | Exercise:N | Reading:Y | NoDopamineFlood:N | NoSetback:Y | Notes:ill
+2026-03-19 | Mindfulness:Y | Exercise:N | Reading:Y | NoDopamineFlood:N | NoSetback:N | Notes:ill
 2026-03-20 | Mindfulness:Y | Exercise:N | Reading:Y | NoDopamineFlood:N | NoSetback:Y | Notes:ill
 2026-03-21 | Mindfulness:N | Exercise:N | Reading:N | NoDopamineFlood:N | NoSetback:Y | Notes:ill
 2026-03-22 | Mindfulness:N | Exercise:N | Reading:Y | NoDopamineFlood:N | NoSetback:Y | Notes:ill
 2026-03-23 | Mindfulness:N | Exercise:N | Reading:N | NoDopamineFlood:N | NoSetback:Y | Notes:ill
 2026-03-24 | Mindfulness:N | Exercise:N | Reading:Y | NoDopamineFlood:N | NoSetback:Y | Notes:ill
 2026-03-25 | Mindfulness:Y | Exercise:N | Reading:Y | NoDopamineFlood:N | NoSetback:Y | Notes:ill
+2026-03-26 | Mindfulness:N | Exercise:N | Reading:N | NoDopamineFlood:N | NoSetback:Y | Notes:
+2026-03-27 | Mindfulness:Y | Exercise:N | Reading:N | NoDopamineFlood:N | NoSetback:Y | Notes:
+2026-03-28 | Mindfulness:N | Exercise:N | Reading:N | NoDopamineFlood:N | NoSetback:Y | Notes:
+2026-03-29 | Mindfulness:Y | Exercise:Strength(biceps,triceps) | Reading:Y | NoDopamineFlood:Y | NoSetback:Y | Notes:project hail mary
