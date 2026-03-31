@@ -56,4 +56,50 @@ the book is [The Art of Bitfulness](https://www.goodreads.com/en/book/show/60154
 - ***Journalling reduces stress,...gratitude journals... boost happiness.***
 - ***....writing, it lets you see our own thinking evolve with time.***
   - this is so true. you'll be wildly surprised when you read your journals from 3-4 years ago. feels like your past self was a different person sometimes.
-- 
+- ***...he uses a note-taking software to record the highlights of every conversation he has had with people throughout the day.***
+  - i learnt how crucial and impactful active listening is when i was in a hostel. i realised that irrespective of wealth, intellect, etc, everyone had problems and wanted other people to listen to them. problems are like air, the wealthy can be equally distressed for wearing a wrong dress as a poor is when hungry. the brain doesn't really care if the problem is actual or first-world, it worries the same way.
+  - i had learnt somewhere about an impactful habit which is noting down points about people in the contact of your phone. and then if you tell them that years later, it hits them hard. how could someone remember something about myself for so long they think. impactful habit this.
+- name folders with project name _ date _ other details. make the name exhaustive so retrieval is easier.
+- ***completion bias.... we get into a habit of only doing the easy things while hard things get sicker.***
+- ***...his studies show that when we think of our future selves, the same regions of the brain get activated as when we think about strangers.***
+  - this is difficult. the trade-off between living for the present self vs living for the future self.
+- ***Do the important tasks first, not last. Whatever time remains, can be spent guilt-free.***
+  - i learnt something similar yesterday from a blogpost. it said do the most important thing first thing in the morning so that even if the rest of day is wasted, you're still moving everyday.
+  - what i've implemented is i write down the night before what i think is the most important and then i do that next day. today is the first day and writing this was my first task.
+- writing down exactly what you're going to do makes you more likely to do so. write i'll do x at place y at time z.
+- ***Ultimately, time is zero-sum.***
+  - ah, the most difficult constraint of life. some argue that the constraint is what makes life valuable. that if we were immortal, nothing would be valuable and important. i don't know.
+- ***The maximum resistance we feel towards doing anything comes right at the start.***
+  - the 2 minute rule. when you don't have the motivation to do anything. just say to your brain you'll do it for 2 minutes.
+- ***You have permission to do nothing, but you do not have permission to do anything else.***
+  - richard feynman's mother would do this. she would lock her in a room with a book. she told feynman she was allowed to not read the book. but since there was nothing else in the room to stimulate one with, feynman would naturally be attracted to the book after a while.
+- a way to treat phone addiction, is to keep it at a desk where there are no chairs, or seats nearby. so you're forced to keep standing while using the phone.
+- set up multiple virtual user accounts for different purposes.
+- ***Ulysses pacts.... present self was a better decision maker than the future self.***
+  - this is an amazing technique. the brain is fallible. don't rely on willpower. create systems that don't let you fall when your brain is vulnerable.
+- Subscribe to newsletters using a separate mail id only for that.
+- Instapaper app for reading later. amazing app and I've been using it since a month.
+- don't passively consume on the internet. create content and share ideas.
+- ***Isolation increases the levels of cortisol... in pigs and in monkeys, just as in humans.***
+- ***For every website you visit, your internet service provider will know where you've been.***
+- there are virtual numbers available for OTPs just like temporary mail ids.
+- ***Tor is the safest browser, but also the slowest.***
+- ***Your ISP is the bottleneck to all your internet usage....The ISPs can see the address of the VPN but will not know your final destination.***
+- ***Researchers at Facebook found.....emotions increase engagements.... 'emotional contagion', when users were shown positive content, their own posts were more positive and vice versa.***
+- ***We update our beliefs based on the world we see online and forget that it does not represent the real world but a collection deliberately selected to get a reaction out of us.***
+  - the algorithms decide your information diet.
+- Make a simple social to do list with names of the person. send messages and talk with them. lifo basis.
+- ***...'degenerate feedback loop'. Based on a guess, the algortithm selects for you content that you think you'll like. Even if you don't like it, you end up going through it and engaging with some. This reinforces the algorithm.***
+- Collaborative filtering. i was wondering whether we could use these algorithms for spouse matchmaking. a problem with a decent impact i guess. why are there no startups around this. gather data, which the apps already do. they know us more than we might know about ourselves. then they suggest partners which we're most likely to be compatible with. a great idea i think.
+- ***blitzscaling... the model is to scale at any cost or try perishing.***
+- self fullfilling loop of raising funds. a founder may want organic growth and no dishonest campaigns but will be forced to do so after raising funds.
+- search for newly funded startups. they might be offering products at even lower than costs funded by VCs trying to capture the market.
+- ***The result of [blitzscaling] in the long run, one way or another, is concentration.***
+- ***Tech companies like regulation once they are big, because they impose disproportionately larger costs on those smaller than them.***
+- ***Regulators are slow by design, whereas startups move with blitz.***
+- ***The underlying principle is that instead of trusting a single authority, cryptocurrencies use some form of a consensus algorithm amongst a group of decentralized peers.***
+- Aadhar was an amazing innovation. Solving multiple problems. Only 15 paise out of 1Rs intended by the government as money to the poor would reach the intended person. Middleman would eat the rest before.
+- 400 million internal immigrant workers, who travel to other districts for seasonal employment.
+- ***There are more than 1.5 mil schools, 10 mil teachers and 250 mil students.***
+
+
