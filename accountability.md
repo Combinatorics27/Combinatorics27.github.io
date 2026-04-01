@@ -50,3 +50,4 @@ N denotes that i did not perform the habit.
 2026-03-29 | Mindfulness:Y | Exercise:Strength(biceps,triceps) | Reading:Y | NoDopamineFlood:Y | NoSetback:Y | Notes:project hail mary
 2026-03-30 | Mindfulness:Y | Exercise:Strength(shoulders) | Reading:Y | NoDopamineFlood:N | NoSetback:Y | Notes:
 2026-03-31 | Mindfulness:Y | Exercise:Walk(3.2km,41min) | Reading:Y | NoDopamineFlood:N | NoSetback:N | Notes:
+2026-04-01 | Mindfulness:Y | Exercise:Strength(core) | Reading:Y | NoDopamineFlood:Y | NoSetback:Y | Notes:
