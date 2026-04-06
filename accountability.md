@@ -29,6 +29,7 @@ the system atleast for now looks foolproof. the only thing to do is to ensure th
 3. reading - reading atleast a couple pages of a book
 4. no dopamine flooding activity - no social media or short form content or anything of the like. if using social media, active hunting for knowledge and not getting carried away by the algorithm in the infinite scroll.
 5. setback - personally defined activity.
+6. sleep score - i'll rate it on 1-10 basis how i feel the moment i wake up.
 
 Y denotes that i performed the habit that day, except for the last two habits where Y means i did not engage in cheap dopamine and did not suffer a setback.
 
@@ -52,4 +53,7 @@ N denotes that i did not perform the habit.
 2026-03-31 | Mindfulness:Y | Exercise:Walk(3.2km,41min) | Reading:Y | NoDopamineFlood:N | NoSetback:N | Notes:
 2026-04-01 | Mindfulness:Y | Exercise:Strength(core) | Reading:Y | NoDopamineFlood:Y | NoSetback:Y | Notes:
 2026-04-02 | Mindfulness:Y | Exercise:N | Reading:Y | NoDopamineFlood:Y | NoSetback:N | Notes: cs50x puzzle day begins
-2026-04-03 | Mindfulness:Y | Exercise:Strength(chest,triceps) | Reading:Y | NoDopamineFlood:Y | NoSetback:N | Notes: 
+2026-04-03 | Mindfulness:Y | Exercise:Strength(chest,triceps) | Reading:Y | NoDopamineFlood:Y | NoSetback:N | Notes:
+2026-04-04 | Mindfulness:Y | Exercise:N | Reading:N | NoDopamineFlood:Y | NoSetback:Y | Notes:
+2026-04-05 | Mindfulness:Y | Exercise:N | Reading:Y | NoDopamineFlood:Y | NoSetback:Y | Notes:
+2026-04-06 | Mindfulness:Y | Exercise:N | Reading:Y | NoDopamineFlood:Y | NoSetback:Y | SleepScore:6 | Notes:
