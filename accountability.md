@@ -59,3 +59,4 @@ N denotes that i did not perform the habit.
 2026-04-06 | Mindfulness:Y | Exercise:N | Reading:N | NoDopamineFlood:Y | NoSetback:Y | SleepScore:6 | Notes:
 2026-04-07 | Mindfulness:Y | Exercise:Jog(4.3km,39min) | Reading:Y | NoDopamineFlood:N | NoSetback:Y | SleepScore:4 | Notes:
 2026-04-08 | Mindfulness:Y | Exercise:Strength(biceps,triceps) | Reading:Y | NoDopamineFlood:N | NoSetback:Y | SleepScore:5 | Notes:
+2026-04-09 | Mindfulness:Y | Exercise:N | Reading:Y | NoDopamineFlood:N | NoSetback:Y | SleepScore:7 | Notes:
