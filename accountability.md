@@ -64,3 +64,5 @@ N denotes that i did not perform the habit.
 2026-04-11 | Mindfulness:Y | Exercise:Strength(shoulders) | Reading:Y | NoDopamineFlood:N | NoSetback:Y | SleepScore:6 | Notes:
 2026-04-12 | Mindfulness:Y | Exercise:Strength(back,biceps) | Reading:Y | NoDopamineFlood:Y | NoSetback:Y | Notes: coachella, mlt q2. sleepscore is not an effective metric since how one feels after waking up depends on the stage of sleep
 2026-04-13 | Mindfulness:Y | Exercise:N | Reading:Y | NoDopamineFlood:Y | NoSetback:N | Notes: fws py nvwuzf zinf. lf q ddnvpw dw ukia, j go vpw dmthrdf boc.
+2026-04-14 | Mindfulness:Y | Exercise:Walk(5km,54min) | Reading:Y | NoDopamineFlood:Y | NoSetback:Y | Notes:
+2026-04-15 | Mindfulness:N | Exercise:Strength(chest,triceps) | Reading:N | NoDopamineFlood:Y | NoSetback:Y | Notes:
