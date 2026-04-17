@@ -66,3 +66,5 @@ N denotes that i did not perform the habit.
 2026-04-13 | Mindfulness:Y | Exercise:N | Reading:Y | NoDopamineFlood:Y | NoSetback:N | Notes: fws py nvwuzf zinf. lf q ddnvpw dw ukia, j go vpw dmthrdf boc.
 2026-04-14 | Mindfulness:Y | Exercise:Walk(5km,54min) | Reading:Y | NoDopamineFlood:Y | NoSetback:Y | Notes:
 2026-04-15 | Mindfulness:N | Exercise:Strength(chest,triceps) | Reading:N | NoDopamineFlood:Y | NoSetback:Y | Notes:
+2026-04-16 | Mindfulness:N | Exercise:Strength(core) | Reading:N | NoDopamineFlood:Y | NoSetback:Y | Notes: Nine Inch Noize album
+2026-04-17 | Mindfulness:Y | Exercise:N | Reading:Y | NoDopamineFlood:N | NoSetback:Y | Notes:
