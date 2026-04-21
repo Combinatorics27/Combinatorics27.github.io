@@ -70,3 +70,5 @@ N denotes that i did not perform the habit.
 2026-04-17 | Mindfulness:Y | Exercise:N | Reading:Y | NoDopamineFlood:N | NoSetback:Y | Notes:
 2026-04-18 | Mindfulness:N | Exercise:N | Reading:N | NoDopamineFlood:Y | NoSetback:Y | Notes: game theory nptel exam
 2026-04-19 | Mindfulness:N | Exercise:N | Reading:N | NoDopamineFlood:N | NoSetback:Y | Notes:
+2026-04-20 | Mindfulness:N | Exercise:Strength(legs) | Reading:N | NoDopamineFlood:N | NoSetback:Y | Notes:
+2026-04-21 | Mindfulness:Y | Exercise:N | Reading:Y | NoDopamineFlood:N | NoSetback:Y | Notes:
