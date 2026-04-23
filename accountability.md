@@ -72,3 +72,5 @@ N denotes that i did not perform the habit.
 2026-04-19 | Mindfulness:N | Exercise:N | Reading:N | NoDopamineFlood:N | NoSetback:Y | Notes:
 2026-04-20 | Mindfulness:N | Exercise:Strength(legs) | Reading:N | NoDopamineFlood:N | NoSetback:Y | Notes:
 2026-04-21 | Mindfulness:Y | Exercise:N | Reading:Y | NoDopamineFlood:N | NoSetback:Y | Notes:
+2026-04-22 | Mindfulness:N | Exercise:N | Reading:Y | NoDopamineFlood:Y | NoSetback:Y | Notes:
+2026-04-23 | Mindfulness:Y | Exercise:Strength(chest,triceps) | Reading:Y | NoDopamineFlood:N | NoSetback:Y | Notes:
