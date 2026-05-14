@@ -21,4 +21,8 @@ categories: til
 
 - margin note - *Constraints. No one is sad about not going to mars. Indians are sad about not being able to go to foreign. Past indians must not have been sad.*
   - this is interesting. you can't be sad about not being able to do something that's not practically possible yet. but we might have future children's who'll be fighting with their parents about how their friends have visited mars multiple times but they haven't yet.
+- ***Maps of the body are found where inputs enter the brain (somatosensory cortex) and outputs leave the brain (motor cortex). Areas with more detailed sensation, and those that are more finely controlled, command more real estate.***
+  - the brain is magical is all i have to say.
+- ***...The map of the body had reorganized. The homunculus still looked like a monkey, but a monkey without a right arm..... The brain adapts to the body plan. When a hand is amputed, neighbouring cortical territories move in to usurp the hand's previously held territory.....In fact, if you merely tie two fingers of your hand togethor - so they no longer operate independently, their cortical representation will eventually merge to a single area.***
+-  
 -   
