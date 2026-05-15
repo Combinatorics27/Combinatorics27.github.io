@@ -93,5 +93,8 @@ N denotes that i did not perform the habit.
 2026-05-10 | Mindfulness:N | Exercise:N | Reading:Y | NoDopamineFlood:N | NoSetback:Y | Notes:
 2026-05-11 | Mindfulness:N | Exercise:Strength(back,biceps) | Reading:Y | NoDopamineFlood:Y | NoSetback:Y | Notes:
 2026-05-12 | Mindfulness:N | Exercise:Strength(chest,triceps) | Reading:Y | NoDopamineFlood:Y | NoSetback:Y | Notes:
+2026-05-13 | Mindfulness:N | Exercise:Walk(2.45km,28min) | Reading:Y | NoDopamineFlood:Y | NoSetback:Y | Notes:
+2026-05-14 | Mindfulness:N | Exercise:Strength(shoulders) | Reading:Y | NoDopamineFlood:N | NoSetback:Y | Notes:
+2026-05-15 | Mindfulness:N | Exercise:Strength(legs) | Reading:Y | NoDopamineFlood:N | NoSetback:Y | Notes:
 
 
