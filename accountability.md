@@ -96,5 +96,8 @@ N denotes that i did not perform the habit.
 2026-05-13 | Mindfulness:N | Exercise:Walk(2.45km,28min) | Reading:Y | NoDopamineFlood:Y | NoSetback:Y | Notes:
 2026-05-14 | Mindfulness:N | Exercise:Strength(shoulders) | Reading:Y | NoDopamineFlood:N | NoSetback:Y | Notes:
 2026-05-15 | Mindfulness:N | Exercise:Strength(legs) | Reading:Y | NoDopamineFlood:N | NoSetback:Y | Notes:
+2026-05-16 | Mindfulness:N | Exercise:N | Reading:Y | NoSetback:Y | Notes:
+2026-05-17 | Mindfulness:N | Exercise:N | Reading:Y | NoSetback:N | Notes:i nbllme boc. jp tillno zruz pdtp. pq ywvu lqgh. ave ln kbve q ohvms pemu boc, j wasf whm pdtp pi mg tlbtjqg, uz viauhr. npu 90 dizv fws qoe. 18 bxgctw.
+
 
 
