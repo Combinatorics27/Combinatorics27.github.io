@@ -99,5 +99,8 @@ N denotes that i did not perform the habit.
 2026-05-16 | Mindfulness:N | Exercise:N | Reading:Y | NoSetback:Y | Notes:
 2026-05-17 | Mindfulness:N | Exercise:N | Reading:Y | NoSetback:N | Notes:i nbllme boc. jp tillno zruz pdtp. pq ywvu lqgh. ave ln kbve q ohvms pemu boc, j wasf whm pdtp pi mg tlbtjqg, uz viauhr. npu 90 dizv fws qoe. 18 bxgctw.
 2026-05-18 | Mindfulness:N | Exercise:Strength(back,biceps) | Reading:Y | NoSetback:Y | Notes:
-2026-05-19 | Mindfulness:N | Exercise:Strength(chest,triceps) | Reading:Y | NoSetback:N | Notes:its still on. 
+2026-05-19 | Mindfulness:N | Exercise:Strength(chest,triceps) | Reading:Y | NoSetback:N | Notes:its still on.
+2026-05-20 | Mindfulness:N | Exercise:Strength(shoulders) | Reading:N | NoSetback:Y | Notes:
+2026-05-21 | Mindfulness:Y | Exercise:InclineWalk(2.46km,33min) | Reading:Y | NoSetback:Y | Notes:
+2026-05-22 | Mindfulness:Y | Exercise:Strength(legs) | Reading:Y | NoSetback:Y | Notes:
 
