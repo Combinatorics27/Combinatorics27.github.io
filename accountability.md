@@ -107,5 +107,15 @@ N denotes that i did not perform the habit.
 2026-05-24 | Mindfulness:N | Exercise:N | Reading:Y | NoSetback:Y | Notes:
 2026-05-25 | Mindfulness:N | Exercise:InclineWalk(3km,40min) | Reading:Y | NoSetback:Y | Notes:
 2026-05-26 | Mindfulness:N | Exercise:Strength(chest,triceps) | Reading:Y | NoSetback:Y | Notes:
+2026-05-27 | Mindfulness:N | Exercise:N | Reading:N | NoSetback:Y | Notes:bilaspur
+2026-05-28 | Mindfulness:N | Exercise:N | Reading:N | NoSetback:Y | Notes:
+2026-05-29 | Mindfulness:N | Exercise:N | Reading:N | NoSetback:Y | Notes:
+2026-05-30 | Mindfulness:N | Exercise:N | Reading:N | NoSetback:Y | Notes:
+2026-05-31 | Mindfulness:N | Exercise:N | Reading:N | NoSetback:Y | Notes:
+2026-06-01 | Mindfulness:N | Exercise:N | Reading:N | NoSetback:Y | Notes:
+2026-05-02 | Mindfulness:N | Exercise:N | Reading:N | NoSetback:Y | Notes:
+2026-05-03 | Mindfulness:N | Exercise:N | Reading:N | NoSetback:Y | Notes:
+2026-05-04 | Mindfulness:N | Exercise:N | Reading:N | NoSetback:Y | Notes:
+2026-05-05 | Mindfulness:N | Exercise:N | Reading:N | NoSetback:Y | Notes:
 
 
