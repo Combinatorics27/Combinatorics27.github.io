@@ -120,5 +120,8 @@ N denotes that i did not perform the habit.
 2026-05-06 | Mindfulness:N | Exercise:Strength(legs) | Reading:Y | NoSetback:Y | Notes:
 2026-05-07 | Mindfulness:N | Exercise:N | Reading:Y | NoSetback:Y | Notes:
 2026-05-08 | Mindfulness:N | Exercise:Strength(back,biceps) | Reading:Y | NoSetback:Y | Notes:
-
-
+2026-05-09 | Mindfulness:N | Exercise:Strength(shoulders), InclineWalk(2.8km,38min| Reading:Y | NoSetback:Y | Notes:
+2026-05-10 | Mindfulness:N | Exercise:N | Reading:Y | NoSetback:Y | Notes:
+2026-05-11 | Mindfulness:N | Exercise:N | Reading:Y | NoSetback:Y | Notes:ill
+2026-05-12 | Mindfulness:N | Exercise:N | Reading:Y | NoSetback:Y | Notes:ill
+2026-05-13 | Mindfulness:N | Exercise:N | Reading:Y | NoSetback:Y | Notes:ill
