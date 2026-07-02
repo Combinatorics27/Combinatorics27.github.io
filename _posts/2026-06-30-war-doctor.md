@@ -49,3 +49,22 @@ these are my thoughts in no particular order
  
 - the author mentions how when he was in london, a patient came with the issue of visible arteries. it is only an aesthetic issue and requires an injection to be administered. when the doctor mentioned he was going to a warzone next week, the patient said that he must be taking a lot of these injections with him. obviously the patient was unaware.
   - this is interesting because this means that most people don't even know the extent of problems their fellow species members go through.
+ 
+- ***Oddly, given the severly testing conditions I have found myself in, it is such moments of conflict with colleagues that are among the most stressful.***
+  - in complicated medical cases, you can consult 10 different doctors and get 10 different treatments.
+  - also related is how life is a probability distribution but you're judged on outcomes. so if you're a weather forecaster asked for whether it'll rain on an important day or not - and basis your analysis you know that there's a 90% chance it'll not rain, then that is what you'll tell them. but then there is 10% probability that you'll turn out wrong and if you do, people will judge you on the outcome not on the probability distribution using which you made your analysis.
+
+- ***Conflict work really was the only thing that made me feel alive.***
+  - i wrote in the margin - "normal life feels boring once you experience the thrill"
+
+- ***Mahdeya was amazed when I produced cakes and sweets and sandwiches in abundance, all for free.***
+  - Mahdeya was the mother of a child in Gaza who was travelling for the first time through planes to UK for the child's treatment.
+  - average life for someone is heaven for someone else.
+  - the brain can so rapidly adapt itself to the wonders of life. it all seems so magical when we think about it but by default, we just whizz by. grocery stores are miracles.
+ 
+- ***I was amazed by his transformation from a rather junior surgeon to a really experienced vascular surgeon in just twelve months.***
+  - the human brain is capable of extraordinary plasticity if given the right environment.
+
+- the body normally contains around 5 litres of blood.
+
+- the author mentions how after a stressful mission, he was angry and would get irritated by the tiniest of things, etc. corroborates my view that there is no free will. 
