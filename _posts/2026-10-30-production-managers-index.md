@@ -1,5 +1,5 @@
 ---
-title: "til: production manager's index"
+title: "til: production manager's index, OTIF"
 date: 2026-10-30
 categories: til
 ---
@@ -12,3 +12,4 @@ if everyone reports everything is same, PMI = 50. if everyone reports everything
 
 usually PMI is within 45 to 60 for india. anything above 55 is good. 
 
+OTIF stands for on-time, in full. this is a supply chain KPI. it measures the proportion of orders that were received on or before time, and in agreed quantity. so not less or damaged goods.
