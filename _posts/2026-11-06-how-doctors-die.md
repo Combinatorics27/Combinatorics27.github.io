@@ -1,6 +1,6 @@
 ---
 title: "TIL: how doctors die, and thoughts about memory"
-date: 2026-11-07
+date: 2026-11-06
 categories: til
 ---
 
